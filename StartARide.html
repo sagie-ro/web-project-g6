@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+      <link rel = "stylesheet" href="singIn.css">
+    <link href=<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start A Ride</title>
+    <title>StartARide</title>
 </head>
 <body>
-<h2>Fill the following details</h2>
-<form>
-    <!-- the personal details should be given directly after sign in -->
+<div class ="header">
+    <div class = "inner_header">
+        <div class = "logo_container">
+            <h1>
+                Rabbit
+            </h1>
+        </div>
+        <ul class="navigation">
+            <a><li>Home</li></a>
+            <a><li>Disconnect</li></a>
+            <a><li>About</li></a>
+            <a><li>Contact Us</li></a>
+        </ul>
+    </div>
+</div>
+
+<!--<div class="grid-container">
+    <div class="grid-DT">
+        <h2>Fill the following details</h2>
+        <label for="datetime"> Date and Time</label><br>
+        <input type="datetime-local" id="datetime" name="datetime">
+    </div>
+    <div class="grid-origin">
+        <label for="origin"> What is your origin?</label><br>
+        <input type="text" id="origin" name="origin">
+    </div>
+    <div class="grid-Dest">
+        <label for="destination">What is your destination?</label><br>
+        <input type="text" id="destination" name="destination">
+    </div>
+    <div class="grid-price">
+        <label for="price">How much each passenger should pay?</label><br>
+        <input type="number" id="price" name="price">
+    </div>
+    <div class="grid-seats">
+        <label for="seats">How many available seats do you have?</label><br>
+        <input type="number" id="seats" name="seats">
+    </div>
+    <div class="grid-animals">
+        <label for="animals">Do you allow Animals?</label><br>
+        <input type="checkbox" id="animals" name="animals">
+    </div>
+    <div class="grid-mask">
+        <label for="masks">Do you demand masks? </label><br>
+        <input type="checkbox" id="masks" name="masks">
+    </div>
+    <div class="grid-smoke">
+        <label for="smoke">Do you allow smoking?</label><br>
+        <input type="checkbox" id="smoke" name="smoke">
+    </div>
+      <div class="grid-ranktxt">
+        <label for="commentD">Comment:</label><br>
+        <input type="text" id="commentD" name="comment"><br>
+
+    </div>
+    <div class="grid-sub">
+        <input type="submit" value="Upload">
+    </div>
+</div>
+
+
+</div>
+-->
+<form class="form">
+    <h2>Fill the details for your ride:</h2>
+    <div class="inForm">
+   <!--the personal details should be given directly after sign in-->
     <label for="datetime"> Date and Time</label><br>
     <input type="datetime-local" id="datetime" name="datetime"><br>
     <label for="origin"> Origin</label><br>
@@ -28,6 +96,7 @@
     <input type="text" id="comment" name="comment"><br>
     <br>
     <input type="submit" value="Upload">
+    </div>
 </form>
 
 </body>

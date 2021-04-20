@@ -22,14 +22,14 @@
 
 }
 
-.grid-rankDr{
+.grid-rankPS{
     margin: 2px;
     width: 30%;
     grid-column-start: 1;
     grid-column-end: 1;
     font-size: 28px;
 }
-.grid-rankCmf{
+.grid-rankBH{
     margin: 2px;
     padding: 10px;
     width: 20%;
