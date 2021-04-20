@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: lightgray;
+    position: fixed ;
+}
+
+.inner_header{
+    width: 90%;
+    height: 100% ;
+    display: block;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.logo_container{
+    height : 100%;
+    display: table;
+    float: left;
+
+}
+
+.logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    display: table-cell;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+;
+}
+.navigation col{
+    width: 75%;
+    float: left;
+
+}
+.navigation a{
+    height : 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.form{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    margin-left: 5px;
+    float: left;
+    width: 40%;
+    border: black 1px solid;
+    display: inline-block;
+    font-size: 20px;
+}
+.form h1{
+ margin-left: 10px;
+}
+.form2 h1{
+ margin-left: 10px;
+}
+.form2{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+margin-left: 5px;
+    float: right;
+    width: 40%;
+    border: black 1px solid;
+    display: inline-block;
+}
+.inForm{
+     margin-top: 10px;
+    margin-left: 10px;
+}
+.up{
+  margin-bottom: 5px;
+}
+.submit{
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
+     margin-left: 15px;
+     font-size: 15px;
+}
+
+.form .inForm .send-btn{
+    float: right;
+    background: lightgray;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background;
+}
+.form .inForm .submit:hover {
+    background: black;
+    color: azure;
+}
+
+element{
+    display: grid ;
+    border: black;
+    background: lightgray;
+
+}
+
+.element.inner_element{
+    display: table;
+    padding: 0px 20px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    margin-left: 5px;
+    width: 20%;
+    border: black 1px solid;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 89%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  bottom: 0; /* Stay at the bottom */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 738px) {
+   .logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    display: table-cell;
+}
+    .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+}
