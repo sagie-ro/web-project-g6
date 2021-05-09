@@ -115,3 +115,6 @@
     transition: 0.5s;
     transition-property: background;
 }
+.btn:hover{
+    background-color: black;
+}

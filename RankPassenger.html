@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="header.css">
+    <link  rel="stylesheet" href="Ranking.css">
+    <script src="header.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="RankPassenger.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous" />
-    <!--<script src="RankPassenger.js"></script>-->
     <title>RankPassenger</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
 		var stars2;
 		var stars3;
 		document.addEventListener('DOMContentLoaded', () => {
-			stars = document.querySelectorAll(".grid-rankBH span");
+			stars = document.querySelectorAll(".grid-rankCmf span");
 			stars2 = document.querySelectorAll(".grid-rankAT span");
             stars3 = document.querySelectorAll(".grid-rankCom span");
 
@@ -55,39 +57,48 @@
 
 		};
 	</script>
-<div class ="header">
-    <div class = "inner_header">
-        <div class = "logo_container">
-            <h1>
-                Rabbit
-            </h1>
-        </div>
-        <ul class="navigation">
-            <a><li>Home</li></a>
-            <a><li>Disconnect</li></a>
-            <a><li>About</li></a>
-            <a><li>Contact Us</li></a>
-        </ul>
-    </div>
+
+<div class="nav">
+  <div class="logo">Rabbit</div>
+  <div class="links">
+    <a href="Home page.html">Home</a>
+    <a href="newSignIn.html">Sing Up/ Log IN</a>
+    <a href="NewUserProfile.html">My Profile</a>
+    <a href="AboutUs.html" >About</a>
+    <a href="ContactNew.html">Contact</a>
+  </div>
+  <div class="ham-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
+
+<div class="container">
+		<div class="contact-box">
+			<div class="left">
+            <img src="Rabbit.jpeg" alt="Rabbit's logo" width=90% >
+            </div>
+			<div class="right">
+
+<h2>Rank Your Passenger!</h2>
 <div class="grid-container">
-    <div class="grid-rankPS">Rank your Passenger!</div>
-    <div class="grid-rankBH">Behavior:
-			<span data-rating="1"><i class="far fa-star"></i></span>
+    <div class="grid-rankCmf">Driving comfort:
+            <span data-rating="1"><i class="far fa-star"></i></span>
 			<span data-rating="2"><i class="far fa-star"></i></span>
 			<span data-rating="3"><i class="far fa-star"></i></span>
 			<span data-rating="4"><i class="far fa-star"></i></span>
 			<span data-rating="5"><i class="far fa-star"></i></span>
     </div>
     <div class="grid-rankAT">Arrival on time:
-			<span data-rating="1"><i class="far fa-star"></i></span>
+            <span data-rating="1"><i class="far fa-star"></i></span>
 			<span data-rating="2"><i class="far fa-star"></i></span>
 			<span data-rating="3"><i class="far fa-star"></i></span>
 			<span data-rating="4"><i class="far fa-star"></i></span>
 			<span data-rating="5"><i class="far fa-star"></i></span>
     </div>
     <div class="grid-rankCom">Company:
-			<span data-rating="1"><i class="far fa-star"></i></span>
+            <span data-rating="1"><i class="far fa-star"></i></span>
 			<span data-rating="2"><i class="far fa-star"></i></span>
 			<span data-rating="3"><i class="far fa-star"></i></span>
 			<span data-rating="4"><i class="far fa-star"></i></span>
@@ -95,34 +106,18 @@
     </div>
     <div class="grid-ranktxt">
         <label for="commentD">Comment:</label><br>
-        <input type="text" id="commentD" name="comment"><br>
+        <textarea placeholder="Your Comment" ></textarea>
+        <br>
 
     </div>
     <div class="grid-sub">
-        <input type="submit" value="Upload">
+        <button class="btn" type="submit">Upload</button>
     </div>
 </div>
-    <div class = "pic">
-    <img src="turlelogo.jpg" alt="turtle's logo">
-</div>
-<!--
-<form>
-    <h2>Rank a Driver</h2>
-    ranking<br>
-    <label for="commentD">Comment</label><br>
-    <input type="text" id="commentD" name="comment"><br>
-    <input type="submit" value="Upload">
+			</div>
+		</div>
+	</div>
 
-</form>
 
-<form>
-    <h2>Rank a Passenger</h2>
-    ranking<br>
-    <label for="commentP">Comment</label><br>
-    <input type="text" id="commentP" name="comment"><br>
-    <input type="submit" value="Upload">
-
-</form>
--->
 </body>
 </html>
