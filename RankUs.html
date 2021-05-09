@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+     <Link rel="stylesheet" href="RankUs.css">
+    <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="header.js"></script>
+
+    <title>NewRank</title>
+</head>
+<body>
+<div class="nav">
+  <div class="logo">Rabbit</div>
+  <div class="links">
+    <a href="Home page.html">Home</a>
+    <a href="newSignIn.html">Sing Up/ Log IN</a>
+    <a href="RankPassenger.html">Rank</a>
+    <a href="AboutUs.html" >About</a>
+    <a href="ContactNew.html">Contact</a>
+  </div>
+  <div class="ham-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<div class= "headline">
+    <h1>Rank Rabbit!</h1>
+    <p> Give us a thought about what you think about our website!<br>
+    It will help us improve and get better in the future so you can enjoy your Rides</p>
+</div>
+</div>
+<div class="container">
+    <div class="post">
+        <div class="text">Thanks For Rating Us!</div>
+        <div class="edit">EDIT</div>
+    </div>
+    <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+         <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <header></header>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your Experience"></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    const btn = document.querySelector("button");
+     const post = document.querySelector(".post");
+     const widget = document.querySelector(".star-widget");
+     const editbtn = document.querySelector(".edit");
+     btn.onclick = () =>{
+         widget.style.display = "none";
+         post.style.display = "block";
+       editbtn.onclick = () => {
+           widget.style.display = "block";
+           post.style.display = "none";
+           return false;
+       }
+     }
+</script>
+
+</body>
+</html>
