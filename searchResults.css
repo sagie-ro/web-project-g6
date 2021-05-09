@@ -1,72 +1,20 @@
 *{
     margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
 .grid-container{
+    top: 10px;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
 }
-.header{
-    width: 100%;
-    height: 80px;
-    display: block;
-    background-color: lightgray;
-}
 
-.inner_header{
-    width: 90%;
-    height: 100% ;
-    display: block;
-    margin: 0 auto;
-    background-color: lightgray;
-}
 
-.logo_container{
-    height : 100%;
-    display: table;
-    float: left;
-
-}
-
-.logo_container h1{
-    color: teal;
-    height: 80%;
-    vertical-align: middle;
-    font-family: 'Montserrat';
-    font-size: 50px;
-    display: table-cell;
-}
-
-.navigation{
-    float: right;
-    height: 100%;
-;
-}
-.navigation col{
-    width: 75%;
-    float: left;
-
-}
-.navigation a{
-    height : 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height : 100%;
-    color: teal;
-    font-family: 'Montserrat';
-    font-size: 20px;
-}
 .form{
-    margin-top: 10px;
+    top: 30px;
     font-family: 'Montserrat';
     margin-left: 5px;
     float: left;
@@ -91,7 +39,7 @@ margin-left: 5px;
     display: inline-block;
 }
 .search{
-    margin-top: 5px;
+    margin-top: 8%;
     margin-left: 70px;
     border: #222222 solid 3px;
     border-radius: 10px;
@@ -135,17 +83,17 @@ margin-left: 5px;
 }
 
 .element{
-    padding-top: 10px ;
+    position: center;
+    padding-top: 5px ;
     margin-left: 40px;
     display: inline ;
     border-radius: 10px;
     background: lightblue ;
-    height: 100%;
     width: 90%;
     margin-top: 3px;
      margin-bottom: 5px;
-
 }
+
 .btn{
     margin: 10px;
 	width: 100%;
@@ -165,21 +113,30 @@ margin-left: 5px;
 .inner_element{
     border-radius: 10px;
     padding: 0.5em;
-
-
     font-family: 'Montserrat';
-
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
+
+    width: 8em;
+    display: inline-block;
+    font-size: 15px;
+    border: black 1px solid;
+}
+
+.inner_element2{
+    border-radius: 10px;
+    padding: 0.5em;
+    font-family: 'Montserrat';
+    margin-top: 3%;
+    margin-left: 5px;
+    margin-right: 5px;
 
     height: auto;
     width: auto;
     display: inline-block;
     font-size: 15px;
     border: black 1px solid;
-
-
 }
 
 @media screen and (max-width: 738px) {
