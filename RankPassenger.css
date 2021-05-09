@@ -137,6 +137,19 @@
 .checked {
   color: orange;
 }
+.pic{
+   max-width:50%;
+   height:auto;
+    float:right;
+
+    margin-right:40%;
+
+}
+.pic img{
+    width:100%;
+    height:100%;
+     margin-top:60px;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -161,4 +174,7 @@
     font-family: 'Montserrat';
     font-size: 10px;
 }
+}
+.data-rating{
+    color: orange;
 }
