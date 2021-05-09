@@ -1,0 +1,256 @@
+/*
+*{
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+.grid-container{
+    position: fixed;
+    top: 10%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(10,10%);
+    min-height: 10vh;
+    column-gap: 0px;
+    row-gap: 0px;
+
+}
+
+.grid-DT{
+    margin: 2px;
+    padding: 6px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 15px;
+}
+#datetime{
+        height:50px;
+    width: 300px;
+}
+.grid-origin{
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 15px;
+}
+.grid-Dest{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-size: 15px;
+}
+.grid-price{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 15px;
+}
+.grid-seats{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    font-size: 15px;
+}
+.grid-animals{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    font-size: 15px;
+}
+
+.grid-masks{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 8;
+    font-size: 15px;
+}
+
+.grid-smoke{
+    margin: 2px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 9;
+    font-size: 15px;
+}
+.grid-sub{
+     grid-row-start: 10;
+    grid-row-end: 10;
+}
+#commentD{
+    height:50px;
+    width: 300px;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: lightgray;
+}
+
+.inner_header{
+    width: 90%;
+    height: 100% ;
+    display: block;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.logo_container{
+    height : 100%;
+    display: table;
+    float: left;
+
+}
+
+.logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    display: table-cell;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+;
+}
+.navigation col{
+    width: 75%;
+    float: left;
+
+}
+.navigation a{
+    height : 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.form{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+margin-left: 5px;
+    float: left;
+    width: 40%;
+    border: black 1px solid;
+    display: inline-block;
+}
+.inForm{
+     margin-top: 10px;
+    margin-left: 10px;
+}
+.up{
+  margin-bottom: 5px;
+}
+.submit{
+    font-family: 'Montserrat';
+    margin-top: 5px;
+    margin-bottom: 5px;
+     margin-left: 15px;
+     font-size: 15px;
+}
+
+.form .inForm .send-btn{
+    float: right;
+    background: lightgray;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background;
+}
+.form .inForm .submit:hover {
+    background: black;
+    color: azure;
+}
+
+@media screen and (max-width: 738px) {
+   .logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    display: table-cell;
+}
+    .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+}
