@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RankDriver.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous" />
+    <title>RanksDriver</title>
+</head>
+<body>
+<script>
+		var stars;
+		var stars2;
+		var stars3;
+		document.addEventListener('DOMContentLoaded', () => {
+			stars = document.querySelectorAll(".grid-rankCmf span");
+			stars2 = document.querySelectorAll(".grid-rankAT span");
+            stars3 = document.querySelectorAll(".grid-rankCom span");
+
+			stars.forEach(item => {
+				item.addEventListener('click', function () {
+					var rating = this.getAttribute("data-rating");
+					return SetRatingStar(rating, stars);
+				});
+			});
+			stars2.forEach(item => {
+                    item.addEventListener('click', function () {
+                    var rating = this.getAttribute("data-rating");
+                    return SetRatingStar(rating, stars2);
+                });
+            });
+            stars3.forEach(item => {
+                    item.addEventListener('click', function () {
+                    var rating = this.getAttribute("data-rating");
+                    return SetRatingStar(rating, stars3);
+                });
+            });
+		});
+
+		function SetRatingStar(rating, stars) {
+			var len = stars.length;
+			console.log(rating);
+
+			for (var i = 0; i < len; i++) {
+				if (i < rating) {
+					stars[i].innerHTML = '<i class="fas fa-star"></i>';
+				} else {
+					stars[i].innerHTML = '<i class="far fa-star"></i>';
+				}
+			}
+
+		};
+	</script>
+<div class ="header">
+    <div class = "inner_header">
+        <div class = "logo_container">
+            <h1>
+                Rabbit
+            </h1>
+        </div>
+        <ul class="navigation">
+            <a><li>Home</li></a>
+            <a><li>Disconnect</li></a>
+            <a><li>About</li></a>
+            <a><li>Contact Us</li></a>
+        </ul>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="grid-rankDr">Rank your driver!</div>
+    <div class="grid-rankCmf">Driving comfort:
+            <span data-rating="1"><i class="far fa-star"></i></span>
+			<span data-rating="2"><i class="far fa-star"></i></span>
+			<span data-rating="3"><i class="far fa-star"></i></span>
+			<span data-rating="4"><i class="far fa-star"></i></span>
+			<span data-rating="5"><i class="far fa-star"></i></span>
+    </div>
+    <div class="grid-rankAT">Arrival on time:
+            <span data-rating="1"><i class="far fa-star"></i></span>
+			<span data-rating="2"><i class="far fa-star"></i></span>
+			<span data-rating="3"><i class="far fa-star"></i></span>
+			<span data-rating="4"><i class="far fa-star"></i></span>
+			<span data-rating="5"><i class="far fa-star"></i></span>
+    </div>
+    <div class="grid-rankCom">Company:
+            <span data-rating="1"><i class="far fa-star"></i></span>
+			<span data-rating="2"><i class="far fa-star"></i></span>
+			<span data-rating="3"><i class="far fa-star"></i></span>
+			<span data-rating="4"><i class="far fa-star"></i></span>
+			<span data-rating="5"><i class="far fa-star"></i></span>
+    </div>
+    <div class="grid-ranktxt">
+        <label for="commentD">Comment:</label><br>
+        <input type="text" id="commentD" name="comment"><br>
+
+    </div>
+    <div class="grid-sub">
+        <input type="submit" value="Upload">
+    </div>
+</div>
+    <div class = "pic">
+    <img src="Rabbit.jpeg" alt="Rabbit's logo">
+</div>
+<!--
+<form>
+    <h2>Rank a Driver</h2>
+    ranking<br>
+    <label for="commentD">Comment</label><br>
+    <input type="text" id="commentD" name="comment"><br>
+    <input type="submit" value="Upload">
+
+</form>
+
+<form>
+    <h2>Rank a Passenger</h2>
+    ranking<br>
+    <label for="commentP">Comment</label><br>
+    <input type="text" id="commentP" name="comment"><br>
+    <input type="submit" value="Upload">
+
+</form>
+-->
+</body>
+</html>

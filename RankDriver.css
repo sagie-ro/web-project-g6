@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+
+}
+
+.grid-container{
+    position: fixed;
+    top: 10%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(7,15%);
+    min-height: 10vh;
+    column-gap: 0px;
+    row-gap: 0px;
+
+}
+
+.grid-rankDr{
+    margin: 2px;
+    width: 30%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 28px;
+}
+.grid-rankCmf{
+    margin: 2px;
+    padding: 10px;
+    width: 20%;
+    height: 90%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 15px;
+}
+.grid-rankCom{
+    margin: 2px;
+    padding: 10px;
+    width: 20%;
+    height: 90%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 15px;
+}
+.grid-rankAT{
+    margin: 2px;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 20%;
+    font-size: 15px;
+}
+.grid-ranktxt{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 20%;
+    font-size: 15px;
+}
+.grid-sub{
+     grid-row-start: 7;
+    grid-row-end: 7;
+}
+#commentD{
+    height:50px;
+    width: 300px;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    display: block;
+    background-color: lightgray;
+    position: fixed ;
+    margin: 0px;
+    gap: 0px;
+
+}
+
+
+.inner_header{
+    width: 90%;
+    height: 100% ;
+    display: block;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.logo_container{
+    height : 100%;
+    display: table;
+    float: left;
+
+}
+
+.logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    display: table-cell;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+;
+}
+.navigation col{
+    width: 75%;
+    float: left;
+
+}
+.navigation a{
+    height : 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.pic{
+   max-width:50%;
+   height:auto;
+    float:right;
+    margin-top:5%;
+    margin-left:30%;
+}
+.pic img{
+    width:60%;
+    height:100%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 738px) {
+   .logo_container h1{
+    color: teal;
+    height: 80%;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    display: table-cell;
+}
+    .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height : 100%;
+    color: teal;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+}
