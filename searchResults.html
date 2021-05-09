@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
     <link rel = "stylesheet" href="searchResults.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="header.js"></script>
     <title>Available rides</title>
 </head>
 <body>
-<div class ="header">
-    <div class = "inner_header">
-        <div class = "logo_container">
-            <h1>
-                Rabbit
-            </h1>
-        </div>
-        <ul class="navigation">
-            <a><li>Home</li></a>
-            <a><li>Disconnect</li></a>
-            <a><li>About</li></a>
-            <a><li>Contact Us</li></a>
-        </ul>
+<div class="nav">
+    <div class="logo">Rabbit</div>
+    <div class="links">
+        <a href="Home page.html">Home</a>
+        <a href="newSignIn.html">Sing Up/ Log IN</a>
+        <a href="RankPassenger.html">Rank</a>
+        <a href="AboutUs.html" >About</a>
+        <a href="ContactNew.html">Contact</a>
+    </div>
+    <div class="ham-btn">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 </div>
 
@@ -36,143 +38,248 @@
 </div>
 
 <div class="grid-container">
-    <ul class="element">
-        <li class="inner_element">
-            <label for="Driver">Driver:</label><br>
-            <a id="Driver" href=getDriver()>Maya Zaken</a>
-        </li>
-        <li class="inner_element">
-            <label for="startTime">Start time</label><br>
-            <p id="startTime" >16:45 </p>
-        </li>
-        <span class="inner_element">
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Maya Zaken</a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >16:45 </p>
+            </li>
+            <span class="inner_element">
                 <label for="currentLocation">Current location</label><br>
                 <a id="currentLocation" >Jerusalem </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="destinationLocation">Current location</label><br>
                 <a id="destinationLocation" >Beer-Sheva</a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="numOfSeats">seats available</label><br>
                 <a id="numOfSeats" >1 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="Payment">Payment</label><br>
                 <a id="Payment">20 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element2">
                 <label>preferences</label><br>
                 <input type="checkbox">smoking? </input><br>
                 <input type="checkbox">pets allowed? </input><br>
-                <p type="text">getPrefrencetxt() </p>
+
             </span>
 
-        <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
 
-    </ul>
+        </ul>
 
-    <ul class="element">
-        <li class="inner_element">
-            <label for="Driver">Driver:</label><br>
-            <a id="Driver" href=getDriver()>Dor Hen </a>
-        </li>
-        <li class="inner_element">
-            <label for="startTime">Start time</label><br>
-            <p id="startTime" >10:00 </p>
-        </li>
-        <span class="inner_element">
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Dor Hen </a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >10:00 </p>
+            </li>
+            <span class="inner_element">
                 <label for="currentLocation">Current location</label><br>
                 <a id="currentLocation" >Beer-Sheva </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="destinationLocation">Current location</label><br>
                 <a id="destinationLocation" >Tel-Aviv</a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="numOfSeats">seats available</label><br>
                 <a id="numOfSeats" >2 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="Payment">Payment</label><br>
                 <a id="Payment">Free </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element2">
                 <label>preferences</label><br>
                 <input type="checkbox">smoking? </input><br>
                 <input type="checkbox">pets allowed? </input><br>
-                <p type="text">getPrefrencetxt() </p>
-            </span>
-        <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
-    </ul>
 
-    <ul class="element">
-        <li class="inner_element">
-            <label for="Driver">Driver:</label><br>
-            <a id="Driver" href=getDriver()>Roni mendelson </a>
-        </li>
-        <li class="inner_element">
-            <label for="startTime">Start time</label><br>
-            <p id="startTime" >12:10 </p>
-        </li>
-        <span class="inner_element">
+            </span>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Roni mendelson </a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >12:10 </p>
+            </li>
+            <span class="inner_element">
                 <label for="currentLocation">Current location</label><br>
                 <a id="currentLocation" >Modi'in </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="destinationLocation">Current location</label><br>
                 <a id="destinationLocation" >Beer-Sheva</a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element2">
                 <label for="numOfSeats">seats available</label><br>
                 <a id="numOfSeats" >4 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="Payment">Payment</label><br>
                 <a id="Payment">25NIS </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label>preferences</label><br>
                 <input type="checkbox">smoking? </input><br>
                 <input type="checkbox">pets allowed? </input><br>
-                <p type="text">getPrefrencetxt() </p>
-            </span>
-        <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
-    </ul>
 
-    <ul class="element">
-        <li class="inner_element">
-            <label for="Driver">Driver:</label><br>
-            <a id="Driver" href=getDriver()>Sagie Rootshtain</a>
-        </li>
-        <li class="inner_element">
-            <label for="startTime">Start time</label><br>
-            <p id="startTime" >14:30 </p>
-        </li>
-        <span class="inner_element">
+            </span>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Sagie Rootshtain</a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >14:30 </p>
+            </li>
+            <span class="inner_element">
                 <label for="currentLocation">Current location</label><br>
                 <a id="currentLocation" >Giva'taim </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="destinationLocation">Current location</label><br>
                 <a id="destinationLocation" >Beer-Sheva</a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="numOfSeats">seats available</label><br>
                 <a id="numOfSeats" >1 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element">
                 <label for="Payment">Payment</label><br>
                 <a id="Payment">25 </a>
             </span>
-        <span class="inner_element">
+            <span class="inner_element2">
                 <label>preferences</label><br>
                 <input type="checkbox">smoking? </input><br>
                 <input type="checkbox">pets allowed? </input><br>
-                <p type="text">getPrefrencetxt() </p>
+
         </span>
-           <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
-    </ul>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Sagie Rootshtain</a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >14:30 </p>
+            </li>
+            <span class="inner_element">
+                <label for="currentLocation">Current location</label><br>
+                <a id="currentLocation" >Giva'taim </a>
+            </span>
+            <span class="inner_element">
+                <label for="destinationLocation">Current location</label><br>
+                <a id="destinationLocation" >Beer-Sheva</a>
+            </span>
+            <span class="inner_element">
+                <label for="numOfSeats">seats available</label><br>
+                <a id="numOfSeats" >1 </a>
+            </span>
+            <span class="inner_element">
+                <label for="Payment">Payment</label><br>
+                <a id="Payment">25 </a>
+            </span>
+            <span class="inner_element2">
+                <label>preferences</label><br>
+                <input type="checkbox">smoking? </input><br>
+                <input type="checkbox">pets allowed? </input><br>
+
+        </span>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Sagie Rootshtain</a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >14:30 </p>
+            </li>
+            <span class="inner_element">
+                <label for="currentLocation">Current location</label><br>
+                <a id="currentLocation" >Giva'taim </a>
+            </span>
+            <span class="inner_element">
+                <label for="destinationLocation">Current location</label><br>
+                <a id="destinationLocation" >Beer-Sheva</a>
+            </span>
+            <span class="inner_element">
+                <label for="numOfSeats">seats available</label><br>
+                <a id="numOfSeats" >1 </a>
+            </span>
+            <span class="inner_element">
+                <label for="Payment">Payment</label><br>
+                <a id="Payment">25 </a>
+            </span>
+            <span class="inner_element2">
+                <label>preferences</label><br>
+                <input type="checkbox">smoking? </input><br>
+                <input type="checkbox">pets allowed? </input><br>
+
+        </span>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+        <ul class="element">
+            <li class="inner_element">
+                <label for="Driver">Driver:</label><br>
+                <a id="Driver" href=getDriver()>Sagie Rootshtain</a>
+            </li>
+            <li class="inner_element">
+                <label for="startTime">Start time</label><br>
+                <p id="startTime" >14:30 </p>
+            </li>
+            <span class="inner_element">
+                <label for="currentLocation">Current location</label><br>
+                <a id="currentLocation" >Giva'taim </a>
+            </span>
+            <span class="inner_element">
+                <label for="destinationLocation">Current location</label><br>
+                <a id="destinationLocation" >Beer-Sheva</a>
+            </span>
+            <span class="inner_element">
+                <label for="numOfSeats">seats available</label><br>
+                <a id="numOfSeats" >1 </a>
+            </span>
+            <span class="inner_element">
+                <label for="Payment">Payment</label><br>
+                <a id="Payment">25 </a>
+            </span>
+            <span class="inner_element2">
+                <label>preferences</label><br>
+                <input type="checkbox">smoking? </input><br>
+                <input type="checkbox">pets allowed? </input><br>
+
+        </span>
+            <a class="btn" href="join%20the%20ride.html"  >Join ride!</a>
+        </ul>
+
+
 
 </div>
 
