@@ -7,62 +7,8 @@
     list-style: none;
     text-decoration: none;
 }
-.header{
-    width: 100%;
-    height: 80px;
-    display: block;
-    background-color: lightgray;
-}
 
-.inner_header{
-    max-width: 90%;
-    height: 100% ;
-    display: block;
-    margin: 0 auto;
-    background-color: lightgray;
-}
 
-.logo_container{
-    height : 100%;
-    display: table;
-    float: left;
-}
-
-.logo_container h1{
-    box-sizing: border-box;
-    color: teal;
-    height: 80%;
-    vertical-align: middle;
-    font-family: 'Montserrat';
-    font-size: 32px;
-    display: table-cell;
-}
-.logo_container h1 col{
-    width: 25%;
-    float: left;
-}
-.navigation{
-    float: right;
-    height: 100%
-}
-.navigation col{
-    width: 75%;
-    float: left;
-}
-.navigation a{
-    height : 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height : 100%;
-    color: teal;
-    font-family: 'Montserrat';
-    font-size: 16px;
-}
 .section{
     width: 100%;
     min-height: 100vh;
