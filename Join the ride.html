@@ -2,48 +2,54 @@
 <html>
 <head>
     <title>Join a ride</title>
-    <Link rel="stylesheet" href="join%20the%20ride.css">
+    <link rel="stylesheet" href="header.css">
+    <Link rel="stylesheet" href="ContactNew.css">
     <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <!------------------------------->
-   <div class ="header">
-    <div class = "inner_header">
-        <div class = "logo_container">
-            <h1>
-                Rabbit
-            </h1>
-        </div>
-        <ul class="navigation">
-            <a><li>Home</li></a>
-            <a><li>Sing in</li></a>
-            <a><li>About</li></a>
-            <a><li>Contact Us</li></a>
-        </ul>
-    </div>
+<div class="nav">
+  <div class="logo">Rabbit</div>
+  <div class="links">
+    <a href="Home%20Page.html">Home</a>
+    <a href="newSignIn.html">Sing Up/ Log IN</a>
+    <a href="RankPassenger.html">Rank</a>
+    <a href="AboutUs.html">About</a>
+    <a href="ContactNew.html" class="active" >Contact</a>
+  </div>
+  <div class="ham-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
+
 <!------------------------------->
 
 <!----Join section starts--->
-    <div class="Join-section">
-        <div class="joinForm">
-            <h2> JOIN THE RIDE!</h2>
-            <form class="Join" action="" method="post">
-                <label for="PickUpSpot">Your exact pick up spot:</label><br>
-                <input type="text" id=PickUpSpot name="PickUpSpot" clas="text-box" placeholder="Your exact pick up Spot" required><br><br>
-                 <label for="GetOffSpot">Your exact get off spot:</label><br>
-                <input type="text" id=GetOffSpot name="GetOffSpot" clas="text-box" placeholder="Your exact get off Spot" required><br><br>
-                <label for="message">Leave a message to the driver:</label><br>
-                <textarea name="message" id="message"  rows="7%" cols="50%" placeholder="Your Message"></textarea><br>
-                <input type="submit" name="submit" class="send-btn" value="send to driver"><br>
-            </form>
-        </div>
 
-    </div>
 
-    </div>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left">
+            <img src="Rabbit.jpeg" alt="Rabbit's logo" width=90% >
+            </div>
+			<div class="right">
+				<h2>Join The Ride</h2>
+                <form>
+				<input type="text"  id=pickUpSpot name="pickUpSpot " class="field" placeholder="Your Exact Pick Up Spot" required>
+				<input type="text" id="GetOffSpot" name="GetOffSpot" class="field" placeholder="Your Exact Get Off Spot" required >
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn" type="Send To Driver">Send</button>
+                </form>
+			</div>
+		</div>
+	</div>
+
+
+
 <!---Join section ends--->
 </body>
 </html>
