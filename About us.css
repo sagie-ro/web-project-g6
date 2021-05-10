@@ -8,7 +8,26 @@
     text-decoration: none;
 }
 
-
+.btn{
+    background: teal;
+    border: none;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background;
+    margin-left:130px;
+}
+.btn:hover{
+    background-color: white;
+    color: #1b1b1b;
+}
 .section{
     width: 100%;
     min-height: 100vh;
@@ -99,23 +118,10 @@
     font-family: 'Montserrat';
     font-size: 10px;
 }
-
+.rateUs{
+    display: none;
 }
-.btn{
-    background: teal;
-    border: none;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property: background;
-    margin-left:130px;
+.ImageSection{
+    display: none;
 }
-.btn:hover{
-    background-color: black;
 }
