@@ -6,7 +6,6 @@
     <link href="<link rel="preconnect href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="header.js"></script>
     <title>NewStartARide</title>
 </head>
 <body>
@@ -53,4 +52,19 @@
 	</div>
 
 </body>
+
+<script>
+    document.querySelector(".nav .ham-btn").addEventListener("click",function(){
+  document.querySelector(".nav").classList.toggle("active");
+
+});
+let el = document.getElementById('rank');
+el.onclick=show;
+    function show(){
+                        document.getElementById("choose").style.visibility="visible";
+                        document.getElementById("choose").style.transition="0.3s ease";
+                        document.getElementById("rank").style.visibility="hidden";
+                    }
+</script>
+
 </html>
