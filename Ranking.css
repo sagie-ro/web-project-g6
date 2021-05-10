@@ -107,6 +107,9 @@ textarea{
 		grid-template-columns: 1fr;
 	}
 	.left{
-		height: 200px;
+		display: none;
+	}
+	.aa{
+		font-size: 18px;
 	}
 }
