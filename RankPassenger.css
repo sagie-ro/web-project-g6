@@ -62,7 +62,7 @@
 .grid-ranktxt{
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 20%;
+    width: 30%;
     font-size: 15px;
 }
 .grid-sub{
