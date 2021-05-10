@@ -104,8 +104,8 @@
 .btn{
     background: teal;
     border: none;
-    width: 140px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -114,6 +114,7 @@
     cursor: pointer;
     transition: 0.5s;
     transition-property: background;
+    margin-left:130px;
 }
 .btn:hover{
     background-color: black;
