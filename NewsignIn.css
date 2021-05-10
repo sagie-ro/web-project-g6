@@ -124,3 +124,23 @@ textarea{
 	.left{
 		height: 200px;
 	}
+.container{
+    margin-top: 80px;
+}
+.left{
+    margin-top: 10px;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+    padding: 25px 40px;
+}
+
+.right{
+	margin-top: 20px;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+    padding: 25px 40px;
+}
+
+}
