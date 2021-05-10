@@ -92,7 +92,7 @@
     border: 1px solid black;
     display: inline-block;
 }
-.circle h2{
+.circle2 h2{
     font-family: 'Montserrat';
     font-size: 22px;
     margin-left: 35px;
@@ -102,4 +102,67 @@
 .circle:hover{
     background-color: black;
     box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+.circle2:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+@media only screen and (max-width: 769px){
+.headline{
+    font-family: 'Montserrat';
+    font-size: 20px;
+     height: 50%;
+    margin-top: 80PX;
+    margin-left: 5%;
+}
+.pic{
+    float: right;
+    width: 30%;
+}
+
+.pic img{
+    margin-top: 15PX;
+    height: auto;
+    width: 100%;
+}
+
+.circle{
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+  border-radius: 50%;
+    margin-left: 20px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.circle h1{
+    font-family: 'Montserrat';
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 40PX;
+    color: #efeaea;
+    text-decoration:none;
+}
+
+.circle2{
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+  border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+.circle2 h2{
+    font-family: 'Montserrat';
+    font-size: 11px;
+    margin-left: 15px;
+    margin-top: 40PX;
+    color: #efeaea;
+}
+
+
+
 }
