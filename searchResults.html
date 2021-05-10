@@ -8,8 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="header.js"></script>
     <title>Available rides</title>
+     <script src="jq.js"></script>
 </head>
 <body>
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+
+
 <div class="nav">
     <div class="logo">Rabbit</div>
     <div class="links">
