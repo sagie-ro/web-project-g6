@@ -76,13 +76,13 @@ input#rate-5:checked ~ label{
     content: "I don't like it";
 }
 #rate-3:checked ~  form header:before{
-    content: "It is awesome";
+    content: "It is ok";
 }
 #rate-4:checked ~  form header:before{
-    content: "I just like it";
+    content: "I like it";
 }
 #rate-5:checked ~  form header:before{
-    content: "I love it";
+    content: "I is awesome";
 }
 .container form{
     display: none;
@@ -155,8 +155,9 @@ form .btn button:hover{
 .headline {
     font-size: 45px;
     margin-top: 0PX;
-    margin-left: 100px;
+    color:#01a9ac;
 }
 .headline p{
-    font-size: 30px;
+    color:black;
+    font-size: 25px;
 }
