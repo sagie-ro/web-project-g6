@@ -82,7 +82,7 @@ input#rate-5:checked ~ label{
     content: "I like it";
 }
 #rate-5:checked ~  form header:before{
-    content: "I is awesome";
+    content: "It is awesome";
 }
 .container form{
     display: none;
@@ -160,4 +160,40 @@ form .btn button:hover{
 .headline p{
     color:black;
     font-size: 25px;
+}
+
+@media only screen and (max-width: 769px) {
+.aa{
+    margin-top: 20px;
+   font-size: 30px;
+}
+
+    .headline {
+        font-size: 20px;
+    }
+.headline p{
+    color:black;
+    font-size: 15px;
+}
+.container{
+
+    width: 80%;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.star-widget label{
+    font-size: 23px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
 }
