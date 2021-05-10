@@ -102,11 +102,24 @@ textarea{
     background-color: #fff;
 }
 
-@media screen and (max-width: 880px){
-	.contact-box{
+@media screen and (max-width: 880px) {
+	.contact-box {
 		grid-template-columns: 1fr;
 	}
-	.left{
-		height: 200px;
+
+	.left {
+		display: none;
+	}
+
+	.grid-rankCmf {
+		font-size: 18px;
+	}
+
+	.grid-rankAT {
+		font-size: 18px;
+	}
+
+	.grid-rankCom {
+		font-size: 18px;
 	}
 }

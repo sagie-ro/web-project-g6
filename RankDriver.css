@@ -158,7 +158,7 @@
   .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 769px) {
    .logo_container h1{
     color: teal;
     height: 80%;
@@ -175,4 +175,7 @@
     font-family: 'Montserrat';
     font-size: 10px;
 }
+    .left{
+        display: none;
+    }
 }
