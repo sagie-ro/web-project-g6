@@ -39,14 +39,18 @@ margin-left: 5px;
     display: inline-block;
 }
 .search{
-
     margin-top: 8%;
     margin-left: 70px;
     border: #222222 solid 3px;
     border-radius: 10px;
     width: 77%;
 }
-
+.inForm{
+    position: center;
+     margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
 .up{
   margin-bottom: 5px;
 }
@@ -58,7 +62,7 @@ margin-left: 5px;
      font-size: 15px;
 }
 
-.inForm .send-btn{
+.form .inForm .send-btn{
     float: right;
     background: lightgray;
     border: none;
@@ -134,7 +138,10 @@ margin-left: 5px;
     font-size: 15px;
     border: black 1px solid;
 }
-
+.inner_element2 img{
+    width:25px;
+    height:25px;
+}
 @media screen and (max-width: 738px) {
    .logo_container h1{
     color: teal;
