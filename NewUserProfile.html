@@ -8,17 +8,24 @@
     <link href="<link rel="preconnect href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="header.js"></script>
+
+
     <!-- Font Awesome -->
 </head>
-<body>
+<body >
+
+<script>
+
+alert("Don't forget to rate your last travel partners!" );
+
+</script>
 
 <div class="nav">
   <div class="logo">Rabbit</div>
   <div class="links">
     <a href="Home page.html">Home</a>
     <a href="newSignIn.html">Sing Up/ Log IN</a>
-    <a href="NewUserProfile.html">Profile</a>
+    <a href="NewUserProfile.html" class="active">My Profile</a>
     <a href="AboutUs.html">About</a>
     <a href="ContactNew.html">Contact</a>
   </div>
@@ -32,6 +39,7 @@
 <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
 <div class="wrapper">
+
     <div class="left">
         <img src="Israel.png" alt="user's profile picture" width="120">
         <h4>Israel Aharoni</h4>
@@ -74,7 +82,7 @@
 
         <div class="social_media">
             <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=https://www.facebook.com/%D7%90%D7%94%D7%A8%D7%95%D7%A0%D7%99-%D7%9E%D7%91%D7%A9%D7%9C-349295671822146><i class="fab fa-facebook-f"></i></a></li>
           </ul>
 
       <div class="Rank" id="rank">
@@ -84,8 +92,8 @@
       </div>
             <div class="choose" id="choose" style="visibility: hidden">
                 <ul>
-                    <li><a href="RankPassenger.html">As Passenger</a></li>
-                    <li><a href="RankDriver.html">As Driver</a></li>
+                    <li><a href="RankPassenger.html">A Passenger</a></li>
+                    <li><a href="RankDriver.html">A Driver</a></li>
                 </ul>
 
             </div>
@@ -96,4 +104,18 @@
     opacity:100%;
 } </style>
 </body>
+<script>
+    document.querySelector(".nav .ham-btn").addEventListener("click",function(){
+  document.querySelector(".nav").classList.toggle("active");
+
+});
+let el = document.getElementById('rank');
+el.onclick=show;
+    function show(){
+                        document.getElementById("choose").style.visibility="visible";
+                        document.getElementById("choose").style.transition="0.3s ease";
+                        document.getElementById("rank").style.visibility="hidden";
+                    }
+</script>
+
 </html>

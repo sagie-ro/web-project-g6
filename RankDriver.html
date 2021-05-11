@@ -3,7 +3,6 @@
 <head>
     <link rel="stylesheet" href="header.css">
     <link  rel="stylesheet" href="Ranking.css">
-    <script src="header.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
@@ -77,12 +76,14 @@
 <div class="container">
 		<div class="contact-box">
 			<div class="left">
+                <form>
             <img src="Rabbit.jpeg" alt="Rabbit's logo" width=90% >
             </div>
 			<div class="right">
 
 <h2>Rank Your Driver!</h2>
 <div class="grid-container">
+    <input type="text"  id=name name="name" class="field" placeholder="Driver's Name" required>
     <div class="grid-rankCmf">Driving comfort:
             <span data-rating="1"><i class="far fa-star"></i></span>
 			<span data-rating="2"><i class="far fa-star"></i></span>
@@ -116,8 +117,24 @@
 </div>
 			</div>
 		</div>
+    </form>
 	</div>
 
 
 </body>
+
+<script>
+    document.querySelector(".nav .ham-btn").addEventListener("click",function(){
+  document.querySelector(".nav").classList.toggle("active");
+
+});
+let el = document.getElementById('rank');
+el.onclick=show;
+    function show(){
+                        document.getElementById("choose").style.visibility="visible";
+                        document.getElementById("choose").style.transition="0.3s ease";
+                        document.getElementById("rank").style.visibility="hidden";
+                    }
+</script>
+
 </html>
