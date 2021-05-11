@@ -89,7 +89,7 @@ margin-left: 5px;
 
     border: #222222 solid 3px;
     border-radius: 10px;
-    width: 85%;
+    width: 75%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -139,15 +139,18 @@ margin-left: 5px;
     float: left;
     position: center;
     padding-top: 5px ;
-    margin-left: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
     display: inline ;
     border-radius: 10px;
     background: lightblue ;
-    width: 90%;
+    width: 70%;
     margin-top: 3px;
      margin-bottom: 5px;
 }
+ #3{
 
+ }
 .btn{
     float: right;
     margin-top: 35px;
@@ -199,7 +202,15 @@ margin-left: 5px;
     width:25px;
     height:25px;
 }
+@media only screen and (max-width: 1280px) {
+        .inner_element2 {
+            display: none;
+    }
+    .secondary {
+        display: none;
+    }
 
+}
 @media only screen and (max-width: 769px) {
     .search {
         margin-top: 20%;
