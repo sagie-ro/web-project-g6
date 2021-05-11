@@ -85,11 +85,11 @@ margin-left: 5px;
 .search{
     display: flex;
     margin-top: 8%;
-    margin-left: 40px;
+    margin-left: 10%;
 
     border: #222222 solid 3px;
     border-radius: 10px;
-    width: 75%;
+    width: 80%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -139,8 +139,8 @@ margin-left: 5px;
     float: left;
     position: center;
     padding-top: 5px ;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 14%;
+    margin-right: 5%px;
     display: inline ;
     border-radius: 10px;
     background: lightblue ;
@@ -218,6 +218,9 @@ margin-left: 5px;
         border: #222222 solid 3px;
         border-radius: 10px;
         width: 77%;
+    }
+    .element{
+        margin-left: 80px;
     }
 }
 @media screen and (max-width: 738px) {
