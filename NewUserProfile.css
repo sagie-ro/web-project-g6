@@ -203,6 +203,7 @@
   display: block;
   font-size: 10px;
     width:70px;
+
 }
 
 @media screen and (max-width: 769px){
@@ -215,5 +216,6 @@
   width: 500px;
   display: flex;
   box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  float:left;
 }
 }
